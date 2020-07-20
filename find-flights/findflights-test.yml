@@ -1,7 +1,7 @@
 execution:
 - executor: jmeter
   scenario:
-    script: C:\Users\ap673362\MyDevProjects\jmx-examples\FIND-FLIGHTS.jmx
+    script: FIND-FLIGHTS.jmx
   concurrency: 
     local: 10
     cloud: 200
@@ -13,5 +13,5 @@ execution:
 
 modules:
   blazemeter:
-    test: "FindFlights - Load Test"
-    report-name: "FindFlights - Multi-location Load Test"
+    test: "FindFlights"
+    report-name: "FindFlights Test"
