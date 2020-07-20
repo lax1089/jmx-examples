@@ -1,6 +1,6 @@
 #!/bin/bash
 rm -rf 20*
-bzt = opt/rh/rh-python36/root/usr/bin/bzt
+bzt = /opt/rh/rh-python36/root/usr/bin/bzt
 
 for d in */ ; do
         echo "Looping through $d"
