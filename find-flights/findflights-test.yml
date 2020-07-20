@@ -14,4 +14,4 @@ execution:
 modules:
   blazemeter:
     test: "FindFlights - Load Test"
-    report-name: "FindFlights - Multi-location Load Test"
+    report-name: "FindFlights Test"
