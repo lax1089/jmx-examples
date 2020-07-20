@@ -7,8 +7,8 @@ for d in */ ; do
 		chmod 755 -R $d
         for filename in $d/*; do
                 if [[ $filename =~ \.yml$ ]]; then
-                        echo "Executing ${filename/\//} as a functional test with name ${filename#*/}"
-                        ${bzt} ${filename/\//} -cloud -func -o modules.blazemeter.test=${filename#*/}
+                        echo "Executing ${filename/\//} as a functional test with name ${filename##*/}"
+                        ${bzt} ${filename/\//} -cloud -func -o modules.blazemeter.test=${filename##*/}
 						echo "Executing ${filename/\//} as a performance test"
                         #${bzt} ${filename/\//} -cloud -detach
                 fi
