@@ -7,8 +7,10 @@ for d in */ ; do
 		chmod 755 -R $d
         for filename in $d/*; do
                 if [[ $filename =~ \.yml$ ]]; then
-                        echo "Executing ${filename/\//}"
+                        echo "Executing ${filename/\//} as a functional test"
                         ${bzt} ${filename/\//} -cloud -func
+						echo "Executing ${filename/\//} as a performance test"
+                        ${bzt} ${filename/\//} -cloud -detach
                 fi
         done
 done
