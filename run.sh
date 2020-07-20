@@ -9,7 +9,7 @@ for d in */ ; do
                 if [[ $filename =~ \.yml$ ]]; then
                         echo "Executing ${filename/\//} as a functional test"
                         ${bzt} ${filename/\//} -cloud -func
-						echo "Executing ${filename/\//} as a performance test"
+			echo "Executing ${filename/\//} as a performance test"
                         ${bzt} ${filename/\//} -cloud -detach
                 fi
         done
