@@ -1,0 +1,17 @@
+execution:
+- executor: jmeter
+  scenario:
+    script: DBank-VISA-Transfer.jmx
+  concurrency: 
+    local: 10
+    cloud: 100
+  hold-for: 15m
+  ramp-up: 2m
+  locations:
+    us-east-1: 1
+    us-west-1: 2
+
+modules:
+  blazemeter:
+    test: "DBank VISA Transfer"
+    report-name: "DBank VISA Transfer Report"
