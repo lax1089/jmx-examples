@@ -9,8 +9,8 @@ for d in */ ; do
                 if [[ $filename =~ \.yml$ ]]; then
 						mod_file_str=`echo ${filename##*/}`
 						mod_file_str=`echo ${mod_file_str%%.*}`
-                        echo "Executing ${filename/\//} as a functional test with name ${mod_file_str}-Functional"
-                        ${bzt} ${filename/\//} -cloud -func -o modules.blazemeter.test=${mod_file_str}-Functional -o modules.blazemeter.report-name="${mod_file_str}-Functional Report"
+                        echo "Executing ${filename/\//} as a functional test with name '${mod_file_str} Functional Test'"
+                        ${bzt} ${filename/\//} -cloud -func -o modules.blazemeter.test="${mod_file_str} Functional Test" -o modules.blazemeter.report-name="${mod_file_str} Functional Report"
 						echo "Executing ${filename/\//} as a performance test"
                         #${bzt} ${filename/\//} -cloud -detach
                 fi
