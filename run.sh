@@ -7,8 +7,10 @@ for d in */ ; do
 		chmod 755 -R $d
         for filename in $d/*; do
                 if [[ $filename =~ \.yml$ ]]; then
-                        echo "Executing ${filename/\//} as a functional test with name ${filename##*/}"
-                        ${bzt} ${filename/\//} -cloud -func -o modules.blazemeter.test=${filename##*/}
+						mod_file_str=`echo ${filename##*/}`
+						mod_file_str=`echo ${mod_file_str%%.*}`
+                        echo "Executing ${filename/\//} as a functional test with name ${mod_file_str}-Functional"
+                        ${bzt} ${filename/\//} -cloud -func -o modules.blazemeter.test=${mod_file_str}-Functional -o modules.blazemeter.report-name="${mod_file_str}-Functional Report"
 						echo "Executing ${filename/\//} as a performance test"
                         #${bzt} ${filename/\//} -cloud -detach
                 fi
