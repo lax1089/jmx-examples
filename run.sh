@@ -11,8 +11,8 @@ for d in */ ; do
 						mod_file_str=`echo ${mod_file_str%%.*}`
                         echo "Executing ${filename/\//} as a functional test with name '${mod_file_str} Functional Test'"
                         ${bzt} ${filename/\//} -cloud -func -o modules.blazemeter.test="${mod_file_str} Functional Test" -o modules.blazemeter.report-name="${mod_file_str} Functional Report"
-						echo "Executing ${filename/\//} as a performance test"
-                        #${bzt} ${filename/\//} -cloud -detach
+						echo "Executing ${filename/\//} as a performance test with name '${mod_file_str} Load Test'"
+                        ${bzt} ${filename/\//} -cloud -detach -o modules.blazemeter.test="${mod_file_str} Load Test" -o modules.blazemeter.report-name="${mod_file_str} Load Test Report"
                 fi
         done
 done
