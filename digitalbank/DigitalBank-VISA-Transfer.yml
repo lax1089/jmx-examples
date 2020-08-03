@@ -13,5 +13,5 @@ execution:
 
 modules:
   blazemeter:
-    test: "DBank VISA Transfer"
-    report-name: "DBank VISA Transfer Report"
+    test: "DBank VISA Transfer Load Test"
+    report-name: "DBank VISA Transfer Load Test"

@@ -8,8 +8,8 @@ execution:
 
 modules:
   blazemeter:
-    test: "FindFlights - Search Load Test"
-    report-name: "FindFlights - Search Load Report"
+    test: "FindFlights - Flight Search Load Test"
+    report-name: "FindFlights - Flight Search Load Test"
 
 scenarios:
   FindFlights-LoadTest:
