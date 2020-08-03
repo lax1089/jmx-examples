@@ -1,7 +1,7 @@
 execution:
 - executor: jmeter
   scenario:
-    script: DBank-VISA-Transfer.jmx
+    script: DBank-VISA-Transfer1-Positive.jmx
   concurrency: 
     local: 10
     cloud: 100
