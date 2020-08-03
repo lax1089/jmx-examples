@@ -1,0 +1,20 @@
+execution:
+- executor: jmeter
+  scenario:
+    script: FindFlights-FlightSearch1-Positive.jmx
+    modifications:
+      disable:
+      - *FUNC_ONLY
+  concurrency: 
+    local: 10
+    cloud: 100
+  hold-for: 15m
+  ramp-up: 2m
+  locations:
+    us-east-1: 1
+    us-west-1: 2
+
+modules:
+  blazemeter:
+    test: "FindFlights - Search Load Test"
+    report-name: "FindFlights - Search Load Report"
