@@ -27,7 +27,7 @@ for d in */ ; do
 						echo "Executing ${filename/\//} as a functional test with name '${mod_file_str} Functional Test'"
                         ${bzt} ${filename/\//} -cloud -func -detach -o modules.blazemeter.test="${mod_file_str} Functional Test" -o modules.blazemeter.report-name="${mod_file_str} Functional Test Report${branch_text}"
 				elif [[ $filename =~ \.yml$ ]]; then
-						echo "Executing ${filename/\//} as a performance test" 
+						echo "Executing ${filename/\//} as a performance test with name '${mod_file_str} Load Test'" 
                         ${bzt} ${filename/\//} -cloud -detach -o modules.blazemeter.test="${mod_file_str} Load Test" -o modules.blazemeter.report-name="${mod_file_str} Load Test Report${branch_text}"
                 fi
         done
