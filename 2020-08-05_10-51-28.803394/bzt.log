@@ -1,0 +1,488 @@
+[2020-08-05 10:51:28,684 INFO root] Taurus CLI Tool v1.13.9
+[2020-08-05 10:51:28,686 DEBUG root] Command-line options: {'log': 'C:\\Users\\ap673362\\AppData\\Local\\Temp\\bzt_vc6flihn.log', 'option': ['modules.blazemeter.test=DBank-VISA-Transfer2-Positive Functional Test', 'modules.blazemeter.report-name=DBank-VISA-Transfer2-Positive Functional Test Report'], 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': ['cloud', 'func', 'detach']}
+[2020-08-05 10:51:28,686 DEBUG root] Python: CPython 3.6.5
+[2020-08-05 10:51:28,686 DEBUG root] Rev: 43411c567cb83f1bf7e2da4690a98d46018389da; OS: uname_result(system='Windows', node='JL5Q1Z2', release='10', version='10.0.18362', machine='AMD64', processor='Intel64 Family 6 Model 158 Stepping 13, GenuineIntel')
+[2020-08-05 10:51:28,688 DEBUG root] Adding JMX shorthand config for: ['digitalbank/DBank-VISA-Transfer2-Positive.jmx']
+[2020-08-05 10:51:28,690 DEBUG root] Dumping JSON config into C:\Users\ap673362\AppData\Local\Temp\jmx_qzl4on96.json
+[2020-08-05 10:51:28,690 INFO root] Starting with configs: ['C:\\Users\\ap673362\\AppData\\Local\\Temp\\jmx_qzl4on96.json']
+[2020-08-05 10:51:28,692 DEBUG root] Using personal config: C:\Users\ap673362\.bzt-rc
+[2020-08-05 10:51:28,692 INFO Engine] Configuring...
+[2020-08-05 10:51:28,762 DEBUG Engine] Base configs list: ['C:\\Users\\ap673362\\AppData\\Local\\Taurus\\pkgs\\bzt\\resources/10-base-config.yml']
+[2020-08-05 10:51:28,762 DEBUG Engine.Configuration] Configs: ['C:\\Users\\ap673362\\AppData\\Local\\Taurus\\pkgs\\bzt\\resources/10-base-config.yml']
+[2020-08-05 10:51:28,764 DEBUG Engine.Configuration] Reading C:\Users\ap673362\AppData\Local\Taurus\pkgs\bzt\resources/10-base-config.yml as YAML
+[2020-08-05 10:51:28,787 DEBUG Engine] User configs list: ['C:\\Users\\ap673362\\.bzt-rc', 'C:\\Users\\ap673362\\AppData\\Local\\Temp\\jmx_qzl4on96.json']
+[2020-08-05 10:51:28,787 DEBUG Engine.Configuration] Configs: ['C:\\Users\\ap673362\\.bzt-rc', 'C:\\Users\\ap673362\\AppData\\Local\\Temp\\jmx_qzl4on96.json']
+[2020-08-05 10:51:28,788 WARNING Engine.Configuration] Replaced leading tabs in file C:\Users\ap673362\.bzt-rc, line 36
+[2020-08-05 10:51:28,789 WARNING Engine.Configuration] Line content is: token: 68d0df9d40c6247bbcc1a979:2ccdb1cc571b18fbf28d0179f6313002a32bb37f59bc21e858fcc9aec019452c4bd37012
+[2020-08-05 10:51:28,790 WARNING Engine.Configuration] Please remember that YAML spec does not allow using tabs for indentation
+[2020-08-05 10:51:28,791 DEBUG Engine.Configuration] Reading C:\Users\ap673362\.bzt-rc as YAML
+[2020-08-05 10:51:28,795 DEBUG Engine.Configuration] Reading C:\Users\ap673362\AppData\Local\Temp\jmx_qzl4on96.json as YAML
+[2020-08-05 10:51:28,796 DEBUG Engine.Configuration] Configs: ['C:\\Users\\ap673362\\.bzt-rc', 'C:\\Users\\ap673362\\AppData\\Local\\Temp\\jmx_qzl4on96.json']
+[2020-08-05 10:51:28,796 DEBUG Engine.Configuration] Reading C:\Users\ap673362\.bzt-rc as YAML
+[2020-08-05 10:51:28,800 DEBUG Engine.Configuration] Reading C:\Users\ap673362\AppData\Local\Temp\jmx_qzl4on96.json as YAML
+[2020-08-05 10:51:28,802 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.13.9&installID=windows-8d23e820b17
+[2020-08-05 10:51:28,802 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.13.9&installID=windows-8d23e820b17
+[2020-08-05 10:51:28,802 DEBUG ConfigOverrider] Applying modules.blazemeter.test=DBank-VISA-Transfer2-Positive Functional Test
+[2020-08-05 10:51:28,802 DEBUG ConfigOverrider] Applying: [test]=DBank-VISA-Transfer2-Positive Functional Test
+[2020-08-05 10:51:28,803 DEBUG ConfigOverrider] Parsed override value: 'DBank-VISA-Transfer2-Positive Functional Test' -> 'DBank-VISA-Transfer2-Positive Functional Test' (<class 'str'>)
+[2020-08-05 10:51:28,803 DEBUG ConfigOverrider] Applying modules.blazemeter.report-name=DBank-VISA-Transfer2-Positive Functional Test Report
+[2020-08-05 10:51:28,803 DEBUG ConfigOverrider] Applying: [report-name]=DBank-VISA-Transfer2-Positive Functional Test Report
+[2020-08-05 10:51:28,803 DEBUG ConfigOverrider] Parsed override value: 'DBank-VISA-Transfer2-Positive Functional Test Report' -> 'DBank-VISA-Transfer2-Positive Functional Test Report' (<class 'str'>)
+[2020-08-05 10:51:28,803 INFO Engine] Artifacts dir: C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394
+[2020-08-05 10:51:28,806 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2020-08-05 10:51:28,807 DEBUG Engine] New artifact filename: C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\effective
+[2020-08-05 10:51:28,809 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\effective.yml
+[2020-08-05 10:51:28,822 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\effective.json
+[2020-08-05 10:51:28,823 DEBUG Engine] New artifact filename: C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\merged.yml
+[2020-08-05 10:51:28,824 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\merged.yml
+[2020-08-05 10:51:28,825 DEBUG Engine] New artifact filename: C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\merged.json
+[2020-08-05 10:51:28,825 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\merged.json
+[2020-08-05 10:51:28,826 DEBUG Engine] Add existing artifact (move=False): C:\Users\ap673362\AppData\Local\Temp\jmx_qzl4on96.json
+[2020-08-05 10:51:28,826 DEBUG Engine] Copying C:\Users\ap673362\AppData\Local\Temp\jmx_qzl4on96.json to C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\jmx_qzl4on96.json
+[2020-08-05 10:51:28,828 DEBUG root] Closing log handler: C:\Users\ap673362\AppData\Local\Temp\bzt_vc6flihn.log
+[2020-08-05 10:51:28,831 DEBUG root] Switched writing logs to C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\bzt.log
+[2020-08-05 10:51:28,831 DEBUG root] Linting config
+[2020-08-05 10:51:28,832 INFO Engine] Preparing...
+[2020-08-05 10:51:28,834 DEBUG Engine] Module config: functional-consolidator {'class': 'bzt.modules.functional.FunctionalAggregator'}
+[2020-08-05 10:51:28,834 DEBUG root] Importing module: bzt.modules.functional
+[2020-08-05 10:51:29,313 DEBUG root] Loading class: 'FunctionalAggregator' from <module 'bzt.modules.functional' from 'C:\\Users\\ap673362\\AppData\\Local\\Taurus\\pkgs\\bzt\\modules\\functional.py'>
+[2020-08-05 10:51:29,313 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2020-08-05 10:51:29,313 DEBUG root] Importing module: bzt.modules.monitoring
+[2020-08-05 10:51:29,315 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from 'C:\\Users\\ap673362\\AppData\\Local\\Taurus\\pkgs\\bzt\\modules\\monitoring.py'>
+[2020-08-05 10:51:29,316 DEBUG Engine] Module config: cloud {'class': 'bzt.modules.blazemeter.CloudProvisioning', 'default-location': 'us-central1-a', 'token': '********', 'account': 'SE Demo', 'workspace': 'Alex P', 'project': 'Taurus Sandbox', 'detach': True}
+[2020-08-05 10:51:29,316 DEBUG root] Importing module: bzt.modules.blazemeter
+[2020-08-05 10:51:29,336 DEBUG root] Loading class: 'CloudProvisioning' from <module 'bzt.modules.blazemeter' from 'C:\\Users\\ap673362\\AppData\\Local\\Taurus\\pkgs\\bzt\\modules\\blazemeter.py'>
+[2020-08-05 10:51:29,337 DEBUG Engine] Module config: blazemeter {'class': 'bzt.modules.blazemeter.BlazeMeterUploader', 'test': 'DBank-VISA-Transfer2-Positive Functional Test', 'report-name': 'DBank-VISA-Transfer2-Positive Functional Test Report'}
+[2020-08-05 10:51:29,337 DEBUG root] Importing module: bzt.modules.blazemeter
+[2020-08-05 10:51:29,337 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from 'C:\\Users\\ap673362\\AppData\\Local\\Taurus\\pkgs\\bzt\\modules\\blazemeter.py'>
+[2020-08-05 10:51:29,337 DEBUG Engine.cloud] Installing http client
+[2020-08-05 10:51:29,337 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2020-08-05 10:51:29,337 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/accounts
+[2020-08-05 10:51:29,339 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2020-08-05 10:51:29,790 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 None
+[2020-08-05 10:51:29,791 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 11,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 198931,
+            "name": "Aetna",
+            "thumbnailUrl": "",
+            "salesforceId": "0010J
+[2020-08-05 10:51:29,793 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=198931&enabled=true&limit=100 None
+[2020-08-05 10:51:29,793 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=198931&enabled=true&limit=100
+[2020-08-05 10:51:29,826 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.13.9&installID=windows-8d23e820b17 HTTP/1.1" 200 39
+[2020-08-05 10:51:29,827 DEBUG Engine] Taurus updates info: {'latest': '1.14.2', 'needsUpgrade': True}
+[2020-08-05 10:51:29,827 WARNING Engine] There is newer version of Taurus 1.14.2 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
+[2020-08-05 10:51:29,954 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=198931&enabled=true&limit=100 HTTP/1.1" 200 None
+[2020-08-05 10:51:29,956 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 41,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 456745,
+            "name": " MITTESA_3318",
+            "userId": 813259,
+            "created": 1584
+[2020-08-05 10:51:29,964 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=396052&enabled=true&limit=100 None
+[2020-08-05 10:51:29,964 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=396052&enabled=true&limit=100
+[2020-08-05 10:51:30,128 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=396052&enabled=true&limit=100 HTTP/1.1" 200 None
+[2020-08-05 10:51:30,128 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 9,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 393834,
+            "name": "COE",
+            "userId": 490771,
+            "created": 1574364228,
+   
+[2020-08-05 10:51:30,129 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=514413&enabled=true&limit=100 None
+[2020-08-05 10:51:30,130 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=514413&enabled=true&limit=100
+[2020-08-05 10:51:30,320 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=514413&enabled=true&limit=100 HTTP/1.1" 200 None
+[2020-08-05 10:51:30,321 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 2,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 517389,
+            "name": "Default Workspace",
+            "userId": 498178,
+            "created": 1
+[2020-08-05 10:51:30,322 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=516088&enabled=true&limit=100 None
+[2020-08-05 10:51:30,322 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=516088&enabled=true&limit=100
+[2020-08-05 10:51:30,484 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=516088&enabled=true&limit=100 HTTP/1.1" 200 None
+[2020-08-05 10:51:30,485 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 517695,
+            "name": "BlazeMeter Training",
+            "userId": 949383,
+            "created":
+[2020-08-05 10:51:30,486 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=118272&enabled=true&limit=100 None
+[2020-08-05 10:51:30,486 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=118272&enabled=true&limit=100
+[2020-08-05 10:51:30,661 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=118272&enabled=true&limit=100 HTTP/1.1" 200 None
+[2020-08-05 10:51:30,662 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 23365,
+            "name": "Broadcom Workspace Playground",
+            "userId": 323888,
+            "
+[2020-08-05 10:51:30,663 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=120238&enabled=true&limit=100 None
+[2020-08-05 10:51:30,663 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=120238&enabled=true&limit=100
+[2020-08-05 10:51:30,821 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=120238&enabled=true&limit=100 HTTP/1.1" 200 None
+[2020-08-05 10:51:30,859 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 65,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 213328,
+            "name": "API Management - Presales UKI",
+            "userId": 341848,
+           
+[2020-08-05 10:51:30,867 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=132907&enabled=true&limit=100 None
+[2020-08-05 10:51:30,867 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=132907&enabled=true&limit=100
+[2020-08-05 10:51:31,032 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=132907&enabled=true&limit=100 HTTP/1.1" 200 None
+[2020-08-05 10:51:31,033 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 366515,
+            "name": "Online Banking",
+            "userId": 347316,
+            "created": 1568
+[2020-08-05 10:51:31,033 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=302781&enabled=true&limit=100 None
+[2020-08-05 10:51:31,033 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=302781&enabled=true&limit=100
+[2020-08-05 10:51:31,195 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=302781&enabled=true&limit=100 HTTP/1.1" 200 None
+[2020-08-05 10:51:31,195 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 485240,
+            "name": "AlexP",
+            "userId": 380559,
+            "created": 1587093542,
+ 
+[2020-08-05 10:51:31,196 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=185664&enabled=true&limit=100 None
+[2020-08-05 10:51:31,196 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=185664&enabled=true&limit=100
+[2020-08-05 10:51:31,362 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=185664&enabled=true&limit=100 HTTP/1.1" 200 None
+[2020-08-05 10:51:31,363 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 386790,
+            "name": "Mainframe",
+            "userId": 402244,
+            "created": 157308064
+[2020-08-05 10:51:31,363 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=291446&enabled=true&limit=100 None
+[2020-08-05 10:51:31,363 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=291446&enabled=true&limit=100
+[2020-08-05 10:51:31,540 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=291446&enabled=true&limit=100 HTTP/1.1" 200 None
+[2020-08-05 10:51:31,580 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 127,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 286101,
+            "name": ".Demo Workspace",
+            "userId": 515264,
+            "created": 1
+[2020-08-05 10:51:31,595 DEBUG Engine] Module config: jmeter {'class': 'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': 'bzt.jmx.http.HTTPProtocolHandler'}, 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst'], 'properties': {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': ''}}
+[2020-08-05 10:51:31,595 DEBUG root] Importing module: bzt.modules.jmeter
+[2020-08-05 10:51:31,613 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from 'C:\\Users\\ap673362\\AppData\\Local\\Taurus\\pkgs\\bzt\\modules\\jmeter.py'>
+[2020-08-05 10:51:31,614 DEBUG Engine.cloud.ProjectFinder] Parsed test link: None
+[2020-08-05 10:51:31,614 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2020-08-05 10:51:31,614 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/accounts
+[2020-08-05 10:51:31,896 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 None
+[2020-08-05 10:51:31,897 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 11,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 198931,
+            "name": "Aetna",
+            "thumbnailUrl": "",
+            "salesforceId": "0010J
+[2020-08-05 10:51:31,897 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=291446&enabled=true&limit=100 None
+[2020-08-05 10:51:31,897 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=291446&enabled=true&limit=100
+[2020-08-05 10:51:32,059 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=291446&enabled=true&limit=100 HTTP/1.1" 200 None
+[2020-08-05 10:51:32,098 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 127,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 286101,
+            "name": ".Demo Workspace",
+            "userId": 515264,
+            "created": 1
+[2020-08-05 10:51:32,099 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/projects?workspaceId=348658&name=Taurus+Sandbox None
+[2020-08-05 10:51:32,099 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/projects?workspaceId=348658&name=Taurus+Sandbox
+[2020-08-05 10:51:32,406 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/projects?workspaceId=348658&name=Taurus+Sandbox HTTP/1.1" 200 None
+[2020-08-05 10:51:32,408 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 475158,
+            "name": "Taurus Sandbox",
+            "userId": 490771,
+            "description": "
+[2020-08-05 10:51:32,410 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/multi-tests?projectId=475158&name=DBank-VISA-Transfer2-Positive+Functional+Test None
+[2020-08-05 10:51:32,410 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/multi-tests?projectId=475158&name=DBank-VISA-Transfer2-Positive+Functional+Test
+[2020-08-05 10:51:32,568 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/multi-tests?projectId=475158&name=DBank-VISA-Transfer2-Positive+Functional+Test HTTP/1.1" 200 161
+[2020-08-05 10:51:32,570 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 0,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [],
+    "request_id": "5f2ac7747f83b"
+}
+[2020-08-05 10:51:32,570 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/tests?projectId=475158&name=DBank-VISA-Transfer2-Positive+Functional+Test None
+[2020-08-05 10:51:32,571 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/tests?projectId=475158&name=DBank-VISA-Transfer2-Positive+Functional+Test
+[2020-08-05 10:51:32,741 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/tests?projectId=475158&name=DBank-VISA-Transfer2-Positive+Functional+Test HTTP/1.1" 200 None
+[2020-08-05 10:51:32,742 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 8350650,
+            "name": "DBank-VISA-Transfer2-Positive Functional Test",
+            "isNewTest": t
+[2020-08-05 10:51:32,742 DEBUG Engine.cloud.ProjectFinder] Detected test type: standard
+[2020-08-05 10:51:32,742 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces/348658 None
+[2020-08-05 10:51:32,742 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces/348658
+[2020-08-05 10:51:32,956 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces/348658 HTTP/1.1" 200 None
+[2020-08-05 10:51:32,995 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 348658,
+        "name": "Alex P",
+        "userId": 407077,
+        "created": 1564611502,
+        "updated": 1593186922,
+        "enabled": true,
+        "dedicatedIpsEnabled": true,
+[2020-08-05 10:51:33,004 DEBUG Engine.jmeter] Extract {'script': 'digitalbank/DBank-VISA-Transfer2-Positive.jmx'} into scenarios
+[2020-08-05 10:51:33,007 DEBUG Engine.cloud] All resource files are: ['C:\\Users\\ap673362\\MyDevProjects\\jmx-examples\\digitalbank\\DBank-VISA-Transfer2-Positive.jmx']
+[2020-08-05 10:51:33,008 DEBUG Engine.cloud] Replace file names in config: ['C:\\Users\\ap673362\\MyDevProjects\\jmx-examples\\digitalbank\\DBank-VISA-Transfer2-Positive.jmx'] with ['DBank-VISA-Transfer2-Positive.jmx']
+[2020-08-05 10:51:33,008 DEBUG Engine.cloud] Replaced C:\Users\ap673362\MyDevProjects\jmx-examples\digitalbank\DBank-VISA-Transfer2-Positive.jmx with DBank-VISA-Transfer2-Positive.jmx
+[2020-08-05 10:51:33,009 DEBUG Engine] New artifact filename: C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\cloud
+[2020-08-05 10:51:33,010 DEBUG root] Dumping YAML config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\cloud.yml
+[2020-08-05 10:51:33,014 DEBUG root] Dumping JSON config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\cloud.json
+[2020-08-05 10:51:33,014 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/web/elfinder/8350650?cmd=open&target=s1_Lw None
+[2020-08-05 10:51:33,014 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/web/elfinder/8350650?cmd=open&target=s1_Lw
+[2020-08-05 10:51:34,256 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/elfinder/8350650?cmd=open&target=s1_Lw HTTP/1.1" 200 None
+[2020-08-05 10:51:34,257 DEBUG Engine.cloud] Response [200]: {"cwd":{"name":"data","size":0,"mime":"directory","read":1,"write":1,"parent_id":"users","hash":"s1_Lw","rootRev":"","options":{"path":"","url":"","tmbUrl":"self","disabled":["mkdir","archive","zipdl","extract","chmod"],"separator":"\/","copyOverwrite":1,"
+[2020-08-05 10:51:34,257 DEBUG Engine.cloud] Test files: ['DBank-VISA-Transfer2-Positive.jmx', 'taurus.yml']
+[2020-08-05 10:51:34,258 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/web/elfinder/8350650?cmd=rm&targets[]=s1_REJhbmstVklTQS1UcmFuc2ZlcjItUG9zaXRpdmUuam14&targets[]=s1_dGF1cnVzLnltbA None
+[2020-08-05 10:51:34,258 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/web/elfinder/8350650?cmd=rm&targets[]=s1_REJhbmstVklTQS1UcmFuc2ZlcjItUG9zaXRpdmUuam14&targets[]=s1_dGF1cnVzLnltbA
+[2020-08-05 10:51:35,929 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/elfinder/8350650?cmd=rm&targets%5B%5D=s1_REJhbmstVklTQS1UcmFuc2ZlcjItUG9zaXRpdmUuam14&targets%5B%5D=s1_dGF1cnVzLnltbA HTTP/1.1" 200 None
+[2020-08-05 10:51:35,930 DEBUG Engine.cloud] Response [200]: {"removed":["s1_REJhbmstVklTQS1UcmFuc2ZlcjItUG9zaXRpdmUuam14","s1_dGF1cnVzLnltbA"],"changed":[{"name":"data","size":0,"mime":"directory","read":1,"write":1,"parent_id":"users","hash":"s1_Lw","rootRev":"","options":{"path":"","url":"","tmbUrl":"self","disab
+[2020-08-05 10:51:35,930 DEBUG Engine.cloud] Successfully deleted 2 test files
+[2020-08-05 10:51:35,934 DEBUG Engine.cloud] Uploading files into the test: ['C:\\Users\\ap673362\\MyDevProjects\\jmx-examples\\digitalbank\\DBank-VISA-Transfer2-Positive.jmx']
+[2020-08-05 10:51:35,935 DEBUG Engine.cloud] Request: POST https://a.blazemeter.com/api/v4/tests/8350650/files b'--===============7249338659957596259==\r\nContent-Disposition: file; name="script"; filename="taurus.yml"\r\nContent-Type: application/octet-stream\r\n\r\n---\nexecution:\n- executor: jmeter\n  locations:\n    us-central1-a: 1\n  scenario: DBank-VISA-Transfer2-Positive'
+[2020-08-05 10:51:35,935 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/tests/8350650/files
+[2020-08-05 10:51:37,204 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/tests/8350650/files HTTP/1.1" 201 1299
+[2020-08-05 10:51:37,205 DEBUG Engine.cloud] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 8350650,
+        "isNewTest": true,
+        "lastRunTime": 1596639006,
+        "name": "DBank-VISA-Transfer2-Positive Functional Test",
+        "userId": 490771,
+        "creatorClien
+[2020-08-05 10:51:37,205 DEBUG Engine.cloud] Request: PATCH https://a.blazemeter.com/api/v4/tests/8350650 {
+ "configuration": {
+  "executionType": null
+ }
+}
+[2020-08-05 10:51:37,205 DEBUG HTTPClient] Making HTTP request PATCH https://a.blazemeter.com/api/v4/tests/8350650
+[2020-08-05 10:51:37,853 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/tests/8350650 HTTP/1.1" 200 None
+[2020-08-05 10:51:37,855 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 8350650,
+        "isNewTest": true,
+        "lastRunTime": 1596639006,
+        "name": "DBank-VISA-Transfer2-Positive Functional Test",
+        "userId": 490771,
+        "creatorClien
+[2020-08-05 10:51:37,855 DEBUG Engine.cloud] Request: PATCH https://a.blazemeter.com/api/v4/tests/8350650 {
+ "shouldSendReportEmail": false
+}
+[2020-08-05 10:51:37,855 DEBUG HTTPClient] Making HTTP request PATCH https://a.blazemeter.com/api/v4/tests/8350650
+[2020-08-05 10:51:38,264 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/tests/8350650 HTTP/1.1" 200 None
+[2020-08-05 10:51:38,265 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 8350650,
+        "isNewTest": true,
+        "lastRunTime": 1596639006,
+        "name": "DBank-VISA-Transfer2-Positive Functional Test",
+        "userId": 490771,
+        "creatorClien
+[2020-08-05 10:51:38,265 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2020-08-05 10:51:38,265 DEBUG root] Importing module: bzt.modules.reporting
+[2020-08-05 10:51:38,266 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from 'C:\\Users\\ap673362\\AppData\\Local\\Taurus\\pkgs\\bzt\\modules\\reporting.py'>
+[2020-08-05 10:51:38,266 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter', 'disable': True}
+[2020-08-05 10:51:38,266 DEBUG root] Importing module: bzt.modules.console
+[2020-08-05 10:51:38,267 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from 'C:\\Users\\ap673362\\AppData\\Local\\Taurus\\pkgs\\bzt\\modules\\console.py'>
+[2020-08-05 10:51:38,268 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\effective.yml
+[2020-08-05 10:51:38,283 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\effective.json
+[2020-08-05 10:51:38,284 INFO Engine] Starting...
+[2020-08-05 10:51:38,285 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x0000029D129275C0>
+[2020-08-05 10:51:38,285 DEBUG Engine] Startup <bzt.modules.functional.FunctionalAggregator object at 0x0000029D73C43B70>
+[2020-08-05 10:51:38,285 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x0000029D12D0BA90>
+[2020-08-05 10:51:38,285 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x0000029D12D0B470>
+[2020-08-05 10:51:38,286 INFO Engine.console] Waiting for results...
+[2020-08-05 10:51:38,287 DEBUG Engine] Startup <bzt.modules.blazemeter.CloudProvisioning object at 0x0000029D73646390>
+[2020-08-05 10:51:38,287 INFO Engine.cloud.ProjectFinder.CloudTaurusTest] Initiating cloud test with https://a.blazemeter.com ...
+[2020-08-05 10:51:38,288 DEBUG Engine.cloud] Request: POST https://a.blazemeter.com/api/v4/tests/8350650/start?functionalExecution=true None
+[2020-08-05 10:51:38,288 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/tests/8350650/start?functionalExecution=true
+[2020-08-05 10:51:42,015 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/tests/8350650/start?functionalExecution=true HTTP/1.1" 202 3422
+[2020-08-05 10:51:42,016 DEBUG Engine.cloud] Response [202]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 30303014,
+        "name": "DBank-VISA-Transfer2-Positive Functional Test",
+        "userId": 490771,
+        "publicToken": null,
+        "ended": null,
+        "lastUpdate": null,
+  
+[2020-08-05 10:51:42,016 INFO Engine.cloud] Started cloud test: https://a.blazemeter.com/app/#/masters/30303014
+[2020-08-05 10:51:42,182 DEBUG Engine.cloud] Request: PATCH https://a.blazemeter.com/api/v4/masters/30303014 {
+ "name": "DBank-VISA-Transfer2-Positive Functional Test Report"
+}
+[2020-08-05 10:51:42,183 DEBUG HTTPClient] Making HTTP request PATCH https://a.blazemeter.com/api/v4/masters/30303014
+[2020-08-05 10:51:42,370 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/masters/30303014 HTTP/1.1" 200 None
+[2020-08-05 10:51:42,371 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 30303014,
+        "name": "DBank-VISA-Transfer2-Positive Functional Test Report",
+        "userId": 490771,
+        "delayedStartReady": false,
+        "runnerUserId": 490771,
+       
+[2020-08-05 10:51:42,373 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\effective.yml
+[2020-08-05 10:51:42,387 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\effective.json
+[2020-08-05 10:51:42,388 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2020-08-05 10:51:42,388 WARNING Engine.cloud] Detaching Taurus from started test...
+[2020-08-05 10:51:42,679 WARNING Engine] Please wait for graceful shutdown...
+[2020-08-05 10:51:42,680 DEBUG root] Leveled up log file verbosity
+[2020-08-05 10:51:42,680 INFO Engine] Shutting down...
+[2020-08-05 10:51:42,681 DEBUG Engine] Current stop reason: None
+[2020-08-05 10:51:42,682 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\effective.yml
+[2020-08-05 10:51:42,696 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\effective.json
+[2020-08-05 10:51:42,697 INFO Engine] Post-processing...
+[2020-08-05 10:51:42,698 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/masters/30303014/full None
+[2020-08-05 10:51:42,698 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/masters/30303014/full
+[2020-08-05 10:51:42,882 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/masters/30303014/full HTTP/1.1" 200 None
+[2020-08-05 10:51:42,883 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 30303014,
+        "name": "DBank-VISA-Transfer2-Positive Functional Test Report",
+        "userId": 490771,
+        "delayedStartReady": false,
+        "runnerUserId": 490771,
+       
+[2020-08-05 10:51:42,883 DEBUG Engine] post_process: Cloud tests failed
+[2020-08-05 10:51:42,883 INFO Engine.final-stats] Test duration: 0:00:04
+[2020-08-05 10:51:42,884 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2020-08-05 10:51:42,886 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\effective.yml
+[2020-08-05 10:51:42,899 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\effective.json
+[2020-08-05 10:51:42,900 WARNING root] Automated shutdown
+[2020-08-05 10:51:42,906 DEBUG root] AutomatedShutdown: Cloud tests failed
+  File "C:\Users\ap673362\AppData\Local\Taurus\pkgs\bzt\cli.py", line 266, in perform
+    self.engine.post_process()
+  File "C:\Users\ap673362\AppData\Local\Taurus\pkgs\bzt\engine\engine.py", line 333, in post_process
+    reraise(exc_info, exc_value)
+  File "C:\Users\ap673362\AppData\Local\Taurus\pkgs\bzt\six\py3.py", line 86, in reraise
+    raise exc
+  File "C:\Users\ap673362\AppData\Local\Taurus\pkgs\bzt\engine\engine.py", line 319, in post_process
+    module.post_process()
+  File "C:\Users\ap673362\AppData\Local\Taurus\pkgs\bzt\modules\blazemeter.py", line 1767, in post_process
+    raise AutomatedShutdown("Cloud tests failed")
+[2020-08-05 10:51:42,906 INFO root] Artifacts dir: C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394
+[2020-08-05 10:51:42,907 WARNING root] Done performing with code: 3
+[2020-08-05 10:51:42,908 DEBUG root] Closing log handler: C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394\bzt.log

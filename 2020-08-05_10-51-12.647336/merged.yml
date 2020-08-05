@@ -1,0 +1,12 @@
+---
+execution:
+- executor: jmeter
+  scenario:
+    script: digitalbank/DBank-VISA-Transfer1-Positive.jmx
+modules:
+  cloud:
+    account: SE Demo
+    project: Taurus Sandbox
+    token: '********'
+    workspace: Alex P
+

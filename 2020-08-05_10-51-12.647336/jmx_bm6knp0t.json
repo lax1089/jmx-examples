@@ -1,0 +1,10 @@
+{
+ "execution": [
+  {
+   "executor": "jmeter",
+   "scenario": {
+    "script": "digitalbank/DBank-VISA-Transfer1-Positive.jmx"
+   }
+  }
+ ]
+}

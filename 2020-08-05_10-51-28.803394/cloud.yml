@@ -1,0 +1,60 @@
+---
+execution:
+- executor: jmeter
+  locations:
+    us-central1-a: 1
+  scenario: DBank-VISA-Transfer2-Positive.jmx
+local-bzt-version: 1.13.9
+modules:
+  blazemeter:
+    report-name: DBank-VISA-Transfer2-Positive Functional Test Report
+    test: DBank-VISA-Transfer2-Positive Functional Test
+  cloud:
+    account: SE Demo
+    default-location: us-central1-a
+    detach: true
+    project: Taurus Sandbox
+    workspace: Alex P
+  jmeter:
+    plugins:
+    - jpgc-casutg
+    - jpgc-dummy
+    - jpgc-ffw
+    - jpgc-fifo
+    - jpgc-functions
+    - jpgc-json
+    - jpgc-perfmon
+    - jpgc-prmctl
+    - jpgc-tst
+    properties:
+      jmeter.save.saveservice.autoflush: 'true'
+      jmeter.save.saveservice.connect_time: 'true'
+      jmeterengine.force.system.exit: 'true'
+      summariser.name: ''
+    protocol-handlers:
+      http: bzt.jmx.http.HTTPProtocolHandler
+reporting:
+- module: final-stats
+- module: console
+scenarios:
+  DBank-VISA-Transfer2-Positive.jmx:
+    script: DBank-VISA-Transfer2-Positive.jmx
+services:
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+    - conn-all
+  module: monitoring
+settings:
+  default-executor: jmeter
+  env:
+    OBJC_DISABLE_INITIALIZE_FORK_SAFETY: 'YES'
+    TAURUS_ARTIFACTS_DIR: C:\Users\ap673362\MyDevProjects\jmx-examples\2020-08-05_10-51-28.803394
+

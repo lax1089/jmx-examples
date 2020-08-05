@@ -1,0 +1,19 @@
+execution:
+- scenario: FindFlights-LoadTest
+  concurrency: 
+    local: 10
+    cloud: 100
+  hold-for: 15m
+  ramp-up: 2m
+
+modules:
+  blazemeter:
+    test: "FindFlights - Flight Search Load Test"
+    report-name: "FindFlights - Flight Search Load Test"
+
+scenarios:
+  FindFlights-LoadTest:
+    script: FindFlights-FlightSearch1-Positive.jmx
+    modifications:
+      disable:
+      - '*FUNC_ONLY'

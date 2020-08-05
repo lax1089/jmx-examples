@@ -1,0 +1,106 @@
+{
+ "modules": {
+  "jmeter": {
+   "protocol-handlers": {
+    "http": "bzt.jmx.http.HTTPProtocolHandler"
+   },
+   "plugins": [
+    "jpgc-casutg",
+    "jpgc-dummy",
+    "jpgc-ffw",
+    "jpgc-fifo",
+    "jpgc-functions",
+    "jpgc-json",
+    "jpgc-perfmon",
+    "jpgc-prmctl",
+    "jpgc-tst"
+   ],
+   "properties": {
+    "jmeter.save.saveservice.autoflush": "true",
+    "jmeter.save.saveservice.connect_time": "true",
+    "jmeterengine.force.system.exit": "true",
+    "summariser.name": ""
+   }
+  },
+  "consolidator": {
+   "percentiles": [
+    0.0,
+    50.0,
+    90.0,
+    95.0,
+    99.0,
+    99.9,
+    100.0
+   ]
+  },
+  "blazemeter": {
+   "test": "FindFlights-FlightSearch-LoadTest Load Test",
+   "report-name": "FindFlights-FlightSearch-LoadTest Load Test Report"
+  },
+  "cloud": {
+   "default-location": "us-central1-a",
+   "account": "SE Demo",
+   "workspace": "Alex P",
+   "project": "Taurus Sandbox",
+   "detach": true
+  }
+ },
+ "settings": {
+  "default-executor": "jmeter",
+  "env": {
+   "OBJC_DISABLE_INITIALIZE_FORK_SAFETY": "YES",
+   "TAURUS_ARTIFACTS_DIR": "C:\\Users\\ap673362\\MyDevProjects\\jmx-examples\\2020-08-05_10-53-15.253324"
+  }
+ },
+ "reporting": [
+  {
+   "module": "final-stats"
+  },
+  {
+   "module": "console"
+  }
+ ],
+ "services": [
+  {
+   "module": "monitoring",
+   "local": [
+    {
+     "metrics": [
+      "cpu",
+      "mem",
+      "bytes-sent",
+      "bytes-recv",
+      "disk-read",
+      "disk-write",
+      "disk-space",
+      "engine-loop",
+      "conn-all"
+     ]
+    }
+   ]
+  }
+ ],
+ "execution": [
+  {
+   "scenario": "FindFlights-LoadTest",
+   "concurrency": 100,
+   "hold-for": "15m",
+   "ramp-up": "2m",
+   "executor": "jmeter",
+   "locations": {
+    "us-central1-a": 1
+   }
+  }
+ ],
+ "scenarios": {
+  "FindFlights-LoadTest": {
+   "script": "FindFlights-FlightSearch1-Positive.jmx",
+   "modifications": {
+    "disable": [
+     "*FUNC_ONLY"
+    ]
+   }
+  }
+ },
+ "local-bzt-version": "1.13.9"
+}

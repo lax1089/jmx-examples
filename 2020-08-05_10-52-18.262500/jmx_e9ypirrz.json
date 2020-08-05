@@ -1,0 +1,10 @@
+{
+ "execution": [
+  {
+   "executor": "jmeter",
+   "scenario": {
+    "script": "find-flights/FindFlights-FlightSearch2-Positive.jmx"
+   }
+  }
+ ]
+}

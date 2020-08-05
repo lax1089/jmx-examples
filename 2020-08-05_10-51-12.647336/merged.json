@@ -1,0 +1,18 @@
+{
+ "modules": {
+  "cloud": {
+   "token": "********",
+   "account": "SE Demo",
+   "workspace": "Alex P",
+   "project": "Taurus Sandbox"
+  }
+ },
+ "execution": [
+  {
+   "executor": "jmeter",
+   "scenario": {
+    "script": "digitalbank/DBank-VISA-Transfer1-Positive.jmx"
+   }
+  }
+ ]
+}

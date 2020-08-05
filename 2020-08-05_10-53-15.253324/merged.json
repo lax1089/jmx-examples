@@ -1,0 +1,35 @@
+{
+ "modules": {
+  "cloud": {
+   "token": "********",
+   "account": "SE Demo",
+   "workspace": "Alex P",
+   "project": "Taurus Sandbox"
+  },
+  "blazemeter": {
+   "test": "FindFlights - Flight Search Load Test",
+   "report-name": "FindFlights - Flight Search Load Test"
+  }
+ },
+ "execution": [
+  {
+   "scenario": "FindFlights-LoadTest",
+   "concurrency": {
+    "local": 10,
+    "cloud": 100
+   },
+   "hold-for": "15m",
+   "ramp-up": "2m"
+  }
+ ],
+ "scenarios": {
+  "FindFlights-LoadTest": {
+   "script": "FindFlights-FlightSearch1-Positive.jmx",
+   "modifications": {
+    "disable": [
+     "*FUNC_ONLY"
+    ]
+   }
+  }
+ }
+}
