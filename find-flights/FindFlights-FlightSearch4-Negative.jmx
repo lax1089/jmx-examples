@@ -134,7 +134,7 @@
         <hashTree/>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Search" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://blazedemo.com/reserve.php" enabled="true">
@@ -181,7 +181,7 @@
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Choose Flight" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://blazedemo.com/purchase.php" enabled="true">
@@ -259,7 +259,7 @@
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Submit Payment" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://blazedemo.com/confirmation.php" enabled="true">
