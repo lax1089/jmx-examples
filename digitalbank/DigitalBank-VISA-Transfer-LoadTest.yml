@@ -4,7 +4,7 @@ execution:
     script: DBank-VISA-Transfer1-Positive.jmx
   concurrency: 
     local: 10
-    cloud: 100
+    cloud: 50
   hold-for: 15m
   ramp-up: 2m
   locations:

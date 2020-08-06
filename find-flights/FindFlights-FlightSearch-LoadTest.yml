@@ -2,7 +2,7 @@ execution:
 - scenario: FindFlights-LoadTest
   concurrency: 
     local: 10
-    cloud: 100
+    cloud: 40
   hold-for: 15m
   ramp-up: 2m
 
